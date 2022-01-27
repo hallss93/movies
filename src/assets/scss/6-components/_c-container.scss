@@ -1,0 +1,18 @@
+.c-container {
+  margin: auto 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-items-center {
+    align-items: center;
+  }
+  &.no-wrap {
+    flex-wrap: nowrap;
+  }
+}

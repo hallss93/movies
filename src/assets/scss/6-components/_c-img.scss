@@ -1,0 +1,10 @@
+.c-img {
+  &.poster {
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s ease-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

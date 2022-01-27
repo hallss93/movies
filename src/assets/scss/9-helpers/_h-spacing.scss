@@ -1,0 +1,41 @@
+$x: 0;
+
+@while $x < 200 {
+  .m-#{$x} {
+    margin: #{$x}px;
+  }
+  .mt-#{$x} {
+    margin-top: #{$x}px;
+  }
+  .mr-#{$x} {
+    margin-right: #{$x}px;
+  }
+  .mb-#{$x} {
+    margin-bottom: #{$x}px;
+  }
+  .ml-#{$x} {
+    margin-left: #{$x}px;
+  }
+  $x: $x + 5;
+}
+
+$y: 0;
+
+@while $y < 200 {
+  .p-#{$y} {
+    padding: #{$y}px;
+  }
+  .pt-#{$y} {
+    padding-top: #{$y}px;
+  }
+  .pr-#{$y} {
+    padding-right: #{$y}px;
+  }
+  .pb-#{$y} {
+    padding-bottom: #{$y}px;
+  }
+  .pl-#{$y} {
+    padding-left: #{$y}px;
+  }
+  $y: $y + 5;
+}

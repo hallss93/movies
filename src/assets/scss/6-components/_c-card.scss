@@ -1,0 +1,40 @@
+.c-card {
+  margin-bottom: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &.medium {
+    height: 240px;
+  }
+  .c-card-body {
+    display: flex;
+    height: 100%;
+  }
+  .text {
+    padding: 40px 0px 0px 8px;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 1%,
+      rgba(0, 0, 0, 0.7) 50%
+    );
+
+    h4,
+    h6 {
+      color: white;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    .text {
+      opacity: 1;
+    }
+  }
+}

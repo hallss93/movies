@@ -1,0 +1,169 @@
+/* Default */
+
+body {
+  background-color: $black;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.VueCarousel-slide {
+  position: relative;
+  background: transparent;
+  color: #fff;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  max-height: 600px;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.relative {
+  position: relative;
+}
+
+.title-body {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 40%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.3) 80%,
+    rgba(0, 0, 0, 0.2) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 100%;
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h3 {
+    font-weight: 400;
+  }
+}
+
+h4 {
+  font-weight: 400;
+}
+.title {
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .VueCarousel {
+    display: none;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+  background: #212121;
+  line-height: 32px;
+  color: #ffffff;
+  word-wrap: break-word !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  margin: 0;
+  background-color: #e64a19;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  background-color: #e64a19;
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #000000;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+/* Change this in order to change the Dropdown symbol */
+li > a:after {
+  content: " +";
+}
+li > a:only-child:after {
+  content: "";
+}
